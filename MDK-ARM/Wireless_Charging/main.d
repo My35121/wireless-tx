@@ -53,6 +53,7 @@ wireless_charging\main.o: ../Application/Config/Inc/conf_dev.h
 wireless_charging\main.o: ../Application/Device/Inc/dev_charge.h
 wireless_charging\main.o: ../Application/Driver/Inc/driver.h
 wireless_charging\main.o: ../Application/Driver/Inc/drv_uart.h
+wireless_charging\main.o: D:\keil\ARM\ARMCC\Bin\..\include\stdio.h
 wireless_charging\main.o: ../Application/Config/Inc/conf_drv.h
 wireless_charging\main.o: ../Application/Driver/Inc/drv_tim.h
 wireless_charging\main.o: ../Application/Driver/Inc/drv_adc.h

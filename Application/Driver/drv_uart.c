@@ -42,5 +42,5 @@ void UART_SendFloat_ASCII(float f)
     
     sprintf((char*)buf, "%.4f", f);
     
-    HAL_UART_Transmit_DMA(&huart3, buf, strlen((char*)buf));
+    HAL_UART_Transmit_DMA(&huart1, buf, strlen((char*)buf));
 }

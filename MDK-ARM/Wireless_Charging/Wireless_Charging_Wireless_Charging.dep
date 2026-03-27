@@ -1,6 +1,6 @@
 Dependencies for Project 'Wireless_Charging', Target 'Wireless_Charging': (DO NOT MODIFY !)
 CompilerVersion: 5060750::V5.06 update 6 (build 750)::.\ARMCC
-F (startup_stm32f103xb.s)(0x69C543C7)(--cpu Cortex-M3 -g --apcs=interwork -I ../Drivers/CMSIS/Include-I.\RTE\_Wireless_Charging-ID:\keil\ARM\CMSIS\6.1.0\CMSIS\Core\Include-ID:\keil\Keil\STM32F1xx_DFP\2.4.1\Device\Include--pd "__UVISION_VERSION SETA 541" --pd "STM32F10X_MD SETA 1" --pd "_RTE_ SETA 1"--list startup_stm32f103xb.lst --xref -o wireless_charging\startup_stm32f103xb.o --depend wireless_charging\startup_stm32f103xb.d)
+F (startup_stm32f103xb.s)(0x69C561D6)(--cpu Cortex-M3 -g --apcs=interwork -I ../Drivers/CMSIS/Include-I.\RTE\_Wireless_Charging-ID:\keil\ARM\CMSIS\6.1.0\CMSIS\Core\Include-ID:\keil\Keil\STM32F1xx_DFP\2.4.1\Device\Include--pd "__UVISION_VERSION SETA 541" --pd "STM32F10X_MD SETA 1" --pd "_RTE_ SETA 1"--list startup_stm32f103xb.lst --xref -o wireless_charging\startup_stm32f103xb.o --depend wireless_charging\startup_stm32f103xb.d)
 F (../Core/Src/main.c)(0x69C27921)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Application/Device/Inc -I ../Application/Driver/Inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Application/Task/Inc -I ../Application/Config/Inc-I.\RTE\_Wireless_Charging-ID:\keil\ARM\CMSIS\6.1.0\CMSIS\Core\Include-ID:\keil\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="541" -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o wireless_charging\main.o --omf_browse wireless_charging\main.crf --depend wireless_charging\main.d)
 I (../Core/Inc/main.h)(0x69C3EFBC)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x68C7AFA5)
@@ -54,7 +54,8 @@ I (D:\keil\ARM\ARMCC\include\string.h)(0x5D9B3488)
 I (../Application/Config/Inc/conf_dev.h)(0x69C23DD3)
 I (../Application/Device/Inc/dev_charge.h)(0x69C23DD3)
 I (../Application/Driver/Inc/driver.h)(0x69C23DD3)
-I (../Application/Driver/Inc/drv_uart.h)(0x69C23DD3)
+I (../Application/Driver/Inc/drv_uart.h)(0x69C56081)
+I (D:\keil\ARM\ARMCC\include\stdio.h)(0x5D9B348A)
 I (../Application/Config/Inc/conf_drv.h)(0x69C23DD3)
 I (../Application/Driver/Inc/drv_tim.h)(0x69C23DD3)
 I (../Application/Driver/Inc/drv_adc.h)(0x69C2829B)
@@ -196,7 +197,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x68C7AFA5)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x68C7AFA5)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x68C7AFA5)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x68C7AFA5)
-F (../Core/Src/tim.c)(0x69C543C5)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Application/Device/Inc -I ../Application/Driver/Inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Application/Task/Inc -I ../Application/Config/Inc-I.\RTE\_Wireless_Charging-ID:\keil\ARM\CMSIS\6.1.0\CMSIS\Core\Include-ID:\keil\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="541" -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o wireless_charging\tim.o --omf_browse wireless_charging\tim.crf --depend wireless_charging\tim.d)
+F (../Core/Src/tim.c)(0x69C561D2)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Application/Device/Inc -I ../Application/Driver/Inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Application/Task/Inc -I ../Application/Config/Inc-I.\RTE\_Wireless_Charging-ID:\keil\ARM\CMSIS\6.1.0\CMSIS\Core\Include-ID:\keil\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="541" -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o wireless_charging\tim.o --omf_browse wireless_charging\tim.crf --depend wireless_charging\tim.d)
 I (../Core/Inc/tim.h)(0x69C3EFBB)
 I (../Core/Inc/main.h)(0x69C3EFBC)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x68C7AFA5)
@@ -260,7 +261,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x68C7AFA5)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x68C7AFA5)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x68C7AFA5)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x68C7AFA5)
-F (../Core/Src/stm32f1xx_it.c)(0x69C5470F)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Application/Device/Inc -I ../Application/Driver/Inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Application/Task/Inc -I ../Application/Config/Inc-I.\RTE\_Wireless_Charging-ID:\keil\ARM\CMSIS\6.1.0\CMSIS\Core\Include-ID:\keil\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="541" -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o wireless_charging\stm32f1xx_it.o --omf_browse wireless_charging\stm32f1xx_it.crf --depend wireless_charging\stm32f1xx_it.d)
+F (../Core/Src/stm32f1xx_it.c)(0x69C62DBF)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Application/Device/Inc -I ../Application/Driver/Inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Application/Task/Inc -I ../Application/Config/Inc-I.\RTE\_Wireless_Charging-ID:\keil\ARM\CMSIS\6.1.0\CMSIS\Core\Include-ID:\keil\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="541" -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o wireless_charging\stm32f1xx_it.o --omf_browse wireless_charging\stm32f1xx_it.crf --depend wireless_charging\stm32f1xx_it.d)
 I (../Core/Inc/main.h)(0x69C3EFBC)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x68C7AFA5)
 I (../Core/Inc/stm32f1xx_hal_conf.h)(0x69C3EFBC)
@@ -292,7 +293,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x68C7AFA5)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x68C7AFA5)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x68C7AFA5)
 I (../Core/Inc/stm32f1xx_it.h)(0x69C3EFBB)
-I (../Application/Driver/Inc/drv_uart.h)(0x69C23DD3)
+I (../Application/Driver/Inc/drv_uart.h)(0x69C56081)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h)(0x68C7AFA5)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x68C7AFA5)
 I (../Core/Inc/FreeRTOSConfig.h)(0x69C3EFBA)
@@ -306,6 +307,7 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x68C7AFA5)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h)(0x68C7AFA5)
 I (../Core/Inc/gpio.h)(0x69C3EFB7)
 I (../Core/Inc/usart.h)(0x69C3EFBB)
+I (D:\keil\ARM\ARMCC\include\stdio.h)(0x5D9B348A)
 I (../Application/Config/Inc/conf_drv.h)(0x69C23DD3)
 I (../Application/Device/Inc/dev_charge.h)(0x69C23DD3)
 I (../Core/Inc/tim.h)(0x69C3EFBB)
@@ -425,14 +427,15 @@ I (../Application/Config/Inc/conf_dev.h)(0x69C23DD3)
 I (../Application/Device/Inc/dev_charge.h)(0x69C23DD3)
 I (../Core/Inc/tim.h)(0x69C3EFBB)
 I (../Application/Driver/Inc/driver.h)(0x69C23DD3)
-I (../Application/Driver/Inc/drv_uart.h)(0x69C23DD3)
+I (../Application/Driver/Inc/drv_uart.h)(0x69C56081)
 I (../Core/Inc/gpio.h)(0x69C3EFB7)
 I (../Core/Inc/usart.h)(0x69C3EFBB)
+I (D:\keil\ARM\ARMCC\include\stdio.h)(0x5D9B348A)
 I (../Application/Config/Inc/conf_drv.h)(0x69C23DD3)
 I (../Application/Driver/Inc/drv_tim.h)(0x69C23DD3)
 I (../Application/Driver/Inc/drv_adc.h)(0x69C2829B)
 I (../Core/Inc/adc.h)(0x69C41079)
-F (..\Application\Task\data_task.c)(0x69C23DD3)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Application/Device/Inc -I ../Application/Driver/Inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Application/Task/Inc -I ../Application/Config/Inc-I.\RTE\_Wireless_Charging-ID:\keil\ARM\CMSIS\6.1.0\CMSIS\Core\Include-ID:\keil\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="541" -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o wireless_charging\data_task.o --omf_browse wireless_charging\data_task.crf --depend wireless_charging\data_task.d)
+F (..\Application\Task\data_task.c)(0x69C687FC)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Application/Device/Inc -I ../Application/Driver/Inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Application/Task/Inc -I ../Application/Config/Inc-I.\RTE\_Wireless_Charging-ID:\keil\ARM\CMSIS\6.1.0\CMSIS\Core\Include-ID:\keil\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="541" -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o wireless_charging\data_task.o --omf_browse wireless_charging\data_task.crf --depend wireless_charging\data_task.d)
 I (../Application/Task/Inc/data_task.h)(0x69C23DD3)
 I (../Core/Inc/main.h)(0x69C3EFBC)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x68C7AFA5)
@@ -477,9 +480,10 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x68C7AFA5)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h)(0x68C7AFA5)
 I (../Application/Config/Inc/conf_task.h)(0x69C23DD3)
 I (../Application/Driver/Inc/driver.h)(0x69C23DD3)
-I (../Application/Driver/Inc/drv_uart.h)(0x69C23DD3)
+I (../Application/Driver/Inc/drv_uart.h)(0x69C56081)
 I (../Core/Inc/gpio.h)(0x69C3EFB7)
 I (../Core/Inc/usart.h)(0x69C3EFBB)
+I (D:\keil\ARM\ARMCC\include\stdio.h)(0x5D9B348A)
 I (../Application/Config/Inc/conf_drv.h)(0x69C23DD3)
 I (../Application/Driver/Inc/drv_tim.h)(0x69C23DD3)
 I (../Application/Driver/Inc/drv_adc.h)(0x69C2829B)
@@ -595,7 +599,7 @@ I (D:\keil\ARM\ARMCC\include\string.h)(0x5D9B3488)
 I (../Application/Config/Inc/conf_dev.h)(0x69C23DD3)
 I (../Application/Device/Inc/dev_charge.h)(0x69C23DD3)
 I (../Core/Inc/tim.h)(0x69C3EFBB)
-F (..\Application\Driver\drv_adc.c)(0x69C410E1)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Application/Device/Inc -I ../Application/Driver/Inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Application/Task/Inc -I ../Application/Config/Inc-I.\RTE\_Wireless_Charging-ID:\keil\ARM\CMSIS\6.1.0\CMSIS\Core\Include-ID:\keil\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="541" -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o wireless_charging\drv_adc.o --omf_browse wireless_charging\drv_adc.crf --depend wireless_charging\drv_adc.d)
+F (..\Application\Driver\drv_adc.c)(0x69C564AF)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Application/Device/Inc -I ../Application/Driver/Inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Application/Task/Inc -I ../Application/Config/Inc-I.\RTE\_Wireless_Charging-ID:\keil\ARM\CMSIS\6.1.0\CMSIS\Core\Include-ID:\keil\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="541" -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o wireless_charging\drv_adc.o --omf_browse wireless_charging\drv_adc.crf --depend wireless_charging\drv_adc.d)
 I (../Application/Driver/Inc/drv_adc.h)(0x69C2829B)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x68C7AFA5)
 I (../Core/Inc/stm32f1xx_hal_conf.h)(0x69C3EFBC)
@@ -683,8 +687,8 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x68C7AFA5
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x68C7AFA5)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x68C7AFA5)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h)(0x68C7AFA5)
-F (..\Application\Driver\drv_uart.c)(0x69C23DD3)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Application/Device/Inc -I ../Application/Driver/Inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Application/Task/Inc -I ../Application/Config/Inc-I.\RTE\_Wireless_Charging-ID:\keil\ARM\CMSIS\6.1.0\CMSIS\Core\Include-ID:\keil\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="541" -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o wireless_charging\drv_uart.o --omf_browse wireless_charging\drv_uart.crf --depend wireless_charging\drv_uart.d)
-I (../Application/Driver/Inc/drv_uart.h)(0x69C23DD3)
+F (..\Application\Driver\drv_uart.c)(0x69C687BA)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Application/Device/Inc -I ../Application/Driver/Inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Application/Task/Inc -I ../Application/Config/Inc-I.\RTE\_Wireless_Charging-ID:\keil\ARM\CMSIS\6.1.0\CMSIS\Core\Include-ID:\keil\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="541" -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o wireless_charging\drv_uart.o --omf_browse wireless_charging\drv_uart.crf --depend wireless_charging\drv_uart.d)
+I (../Application/Driver/Inc/drv_uart.h)(0x69C56081)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x68C7AFA5)
 I (../Core/Inc/stm32f1xx_hal_conf.h)(0x69C3EFBC)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x68C7AFA5)
@@ -728,6 +732,7 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h)(0x68C7A
 I (../Core/Inc/gpio.h)(0x69C3EFB7)
 I (../Core/Inc/main.h)(0x69C3EFBC)
 I (../Core/Inc/usart.h)(0x69C3EFBB)
+I (D:\keil\ARM\ARMCC\include\stdio.h)(0x5D9B348A)
 I (../Application/Config/Inc/conf_drv.h)(0x69C23DD3)
 I (D:\keil\ARM\ARMCC\include\string.h)(0x5D9B3488)
 F (..\Application\Driver\driver.c)(0x69C23DD3)(--c99 -c --cpu Cortex-M3 -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Application/Device/Inc -I ../Application/Driver/Inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Application/Task/Inc -I ../Application/Config/Inc-I.\RTE\_Wireless_Charging-ID:\keil\ARM\CMSIS\6.1.0\CMSIS\Core\Include-ID:\keil\Keil\STM32F1xx_DFP\2.4.1\Device\Include-D__UVISION_VERSION="541" -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB-o wireless_charging\driver.o --omf_browse wireless_charging\driver.crf --depend wireless_charging\driver.d)
@@ -773,9 +778,10 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x68C7AFA5
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x68C7AFA5)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x68C7AFA5)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h)(0x68C7AFA5)
-I (../Application/Driver/Inc/drv_uart.h)(0x69C23DD3)
+I (../Application/Driver/Inc/drv_uart.h)(0x69C56081)
 I (../Core/Inc/gpio.h)(0x69C3EFB7)
 I (../Core/Inc/usart.h)(0x69C3EFBB)
+I (D:\keil\ARM\ARMCC\include\stdio.h)(0x5D9B348A)
 I (../Application/Config/Inc/conf_drv.h)(0x69C23DD3)
 I (../Application/Driver/Inc/drv_tim.h)(0x69C23DD3)
 I (../Application/Driver/Inc/drv_adc.h)(0x69C2829B)

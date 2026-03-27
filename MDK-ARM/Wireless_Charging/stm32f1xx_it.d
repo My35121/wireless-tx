@@ -45,6 +45,7 @@ wireless_charging\stm32f1xx_it.o: ../Middlewares/Third_Party/FreeRTOS/Source/inc
 wireless_charging\stm32f1xx_it.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h
 wireless_charging\stm32f1xx_it.o: ../Core/Inc/gpio.h
 wireless_charging\stm32f1xx_it.o: ../Core/Inc/usart.h
+wireless_charging\stm32f1xx_it.o: D:\keil\ARM\ARMCC\Bin\..\include\stdio.h
 wireless_charging\stm32f1xx_it.o: ../Application/Config/Inc/conf_drv.h
 wireless_charging\stm32f1xx_it.o: ../Application/Device/Inc/dev_charge.h
 wireless_charging\stm32f1xx_it.o: ../Core/Inc/tim.h

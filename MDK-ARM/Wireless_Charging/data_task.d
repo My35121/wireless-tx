@@ -47,6 +47,7 @@ wireless_charging\data_task.o: ../Application/Driver/Inc/driver.h
 wireless_charging\data_task.o: ../Application/Driver/Inc/drv_uart.h
 wireless_charging\data_task.o: ../Core/Inc/gpio.h
 wireless_charging\data_task.o: ../Core/Inc/usart.h
+wireless_charging\data_task.o: D:\keil\ARM\ARMCC\Bin\..\include\stdio.h
 wireless_charging\data_task.o: ../Application/Config/Inc/conf_drv.h
 wireless_charging\data_task.o: ../Application/Driver/Inc/drv_tim.h
 wireless_charging\data_task.o: ../Application/Driver/Inc/drv_adc.h
