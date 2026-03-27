@@ -47,3 +47,4 @@ wireless_charging\drv_uart.o: ../Core/Inc/usart.h
 wireless_charging\drv_uart.o: D:\keil\ARM\ARMCC\Bin\..\include\stdio.h
 wireless_charging\drv_uart.o: ../Application/Config/Inc/conf_drv.h
 wireless_charging\drv_uart.o: D:\keil\ARM\ARMCC\Bin\..\include\string.h
+wireless_charging\drv_uart.o: D:\keil\ARM\ARMCC\Bin\..\include\stdarg.h

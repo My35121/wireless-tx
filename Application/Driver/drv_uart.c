@@ -1,5 +1,6 @@
 #include "drv_uart.h"
 #include "string.h"
+#include <stdarg.h>
 
 uint8_t rx_dma_buffer1[RX_BUFFER_SIZE];
 uint8_t rx_dma_buffer3[RX_BUFFER_SIZE];
@@ -36,11 +37,22 @@ void USART3_RxHandler(void)
 	}
 }
 
-void UART_SendFloat_ASCII(float f)
+void UART_SendFloat_UINT(float f)
 {
     uint8_t buf[20];
     
     sprintf((char*)buf, "%.4f", f);
     
     HAL_UART_Transmit_DMA(&huart1, buf, strlen((char*)buf));
+}
+
+void WL_UART_printf(char *format, ...)
+{
+    char String[100];
+    va_list arg;
+    va_start(arg, format);
+    vsprintf(String, format, arg);
+    va_end(arg);
+
+    HAL_UART_Transmit(&huart1, (uint8_t *)String, strlen(String), 1000);
 }

@@ -22,7 +22,8 @@ void USART3_Init(void);
 void USART1_RxHandler(void);
 void USART3_RxHandler(void);
 
-void UART_SendFloat_ASCII(float f);
+void UART_SendFloat_UINT(float f);
+void WL_UART_printf(char *format, ...);
 #ifdef __cplusplus
 }
 #endif

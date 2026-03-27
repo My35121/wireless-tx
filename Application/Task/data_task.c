@@ -33,7 +33,7 @@ void StartDataProcessTask(void *argument)
 			
 			//usart send data
             //HAL_UART_Transmit_DMA(&huart1, test_group, sizeof(test_group));//use fot test
-			UART_SendFloat_ASCII(filter.filter_charge_i);
+            WL_UART_printf("%.3f",filter.filter_charge_i);
             osEventFlagsClear(xDataProcessEventHandle, ADC_DATA_READY_BIT);
         }
         // Read USART1 data
