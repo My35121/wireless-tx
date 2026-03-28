@@ -65,7 +65,7 @@ const osThreadAttr_t controlTask_attributes = {
 osThreadId_t dataProcessTaskHandle;
 const osThreadAttr_t dataProcessTask_attributes = {
   .name = "dataProcessTask",
-  .stack_size = 128 * 4,
+  .stack_size = 256 * 4,
   .priority = (osPriority_t) osPriorityHigh,
 };
 /* Definitions for xDataProcessEvent */

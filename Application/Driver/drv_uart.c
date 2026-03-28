@@ -37,14 +37,6 @@ void USART3_RxHandler(void)
 	}
 }
 
-void UART_SendFloat_UINT(float f)
-{
-    uint8_t buf[20];
-    
-    sprintf((char*)buf, "%.4f", f);
-    
-    HAL_UART_Transmit_DMA(&huart1, buf, strlen((char*)buf));
-}
 
 void WL_UART_printf(char *format, ...)
 {

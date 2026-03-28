@@ -13,7 +13,6 @@
 
 extern filter_t filter;
 
-uint8_t test_group[6] = {1, 2, 3, 4, 5, 6};
 extern UART_HandleTypeDef huart3;
 
 void StartDataProcessTask(void *argument)
@@ -32,8 +31,7 @@ void StartDataProcessTask(void *argument)
             ADC1_Read();
 			
 			//usart send data
-            //HAL_UART_Transmit_DMA(&huart1, test_group, sizeof(test_group));//use fot test
-            WL_UART_printf("%.3f",filter.filter_charge_i);
+            WL_UART_printf("%.3f\n",filter.filter_charge_i);
             osEventFlagsClear(xDataProcessEventHandle, ADC_DATA_READY_BIT);
         }
         // Read USART1 data
