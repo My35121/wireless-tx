@@ -58,8 +58,8 @@ void ADC1_Read(void)
 void ADC1_DMA_CpltCallback(DMA_HandleTypeDef *hdma)
 {
     if (hdma->Instance == DMA1_Channel1) {
-        ADC1_Read();
-        WL_UART_printf("%.3f\n", filter.filter_charge_i);
+        // ADC1_Read();
+        // WL_UART_printf("%.3f\n", filter.filter_charge_i);
         osEventFlagsSet(xDataProcessEventHandle, ADC_DATA_READY_BIT);
     }
 }
