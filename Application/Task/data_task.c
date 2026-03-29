@@ -27,11 +27,10 @@ void StartDataProcessTask(void *argument)
         // Read ADC data
         if (data_read & ADC_DATA_READY_BIT)
         {
-            // Process ADC data
-            ADC1_Read();
-			
-			//usart send data
-            WL_UART_printf("%.3f\n",filter.filter_charge_i);
+            // // Process ADC data
+            // ADC1_Read();
+			// //usart send data
+            // WL_UART_printf("%.3f\n",filter.filter_charge_i);
             osEventFlagsClear(xDataProcessEventHandle, ADC_DATA_READY_BIT);
         }
         // Read USART1 data

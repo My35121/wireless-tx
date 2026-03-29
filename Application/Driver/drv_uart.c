@@ -46,5 +46,5 @@ void WL_UART_printf(char *format, ...)
     vsprintf(String, format, arg);
     va_end(arg);
 
-    HAL_UART_Transmit(&huart1, (uint8_t *)String, strlen(String), 1000);
+    HAL_UART_Transmit_DMA(&huart1, (uint8_t *)String, strlen(String));
 }
