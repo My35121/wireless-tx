@@ -14,10 +14,6 @@
 #define LOWER_POWER_THRESHOLD 500 // Threshold for low power detection
 uint32_t charge_time = 0;
 uint32_t lowpower_time = 0;
-
-extern TIM_HandleTypeDef htim3;
-extern TIM_HandleTypeDef htim4;
-
 void StartControlTask(void *argument)
 {   
 
@@ -118,7 +114,7 @@ void StartControlTask(void *argument)
 //                break;
 //            }
 //        }
-	RFID_Off();
+		RFID_Off();
         osDelay(1);
     }
 }

@@ -22,7 +22,7 @@ extern "C" {
 
 #include "conf_drv.h"
 
-#define FILTER_SIZE 10
+#define FILTER_SIZE 1000
 #define ADC_BUFFER_SIZE 2
 
 typedef struct _adc_data_t{
@@ -41,6 +41,7 @@ typedef struct _filter_t{
     float filter_buffer[FILTER_SIZE];
     uint8_t filter_index;
     float filter_charge_i;
+    float input_charge_i;
 } filter_t;
 /**
  * @brief Initializes the ADC peripheral.

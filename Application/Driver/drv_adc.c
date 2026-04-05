@@ -11,7 +11,7 @@
 
 #include "drv_adc.h"
 
-//å¹³å‡æ»¤æ³¢
+//Æ½¾ùÂË²¨
 static float Filter_average(float new_value);
 
 adc_data_t adc_data = {
@@ -46,7 +46,7 @@ void ADC1_Read(void)
 {
     adc_data.charge_i = ((float)adc_data.adc_list_record[0] * 3300.f / 4096.0f - 1650.f) * 20.f * adc_data.charge_i_m + adc_data.charge_i_a;
     adc_data.charge_v = (float)adc_data.adc_list_record[1] * 3300.f / 4096.0f * 20.f * adc_data.charge_v_m + adc_data.charge_v_a;
-    filter.filter_charge_i = Filter_average(adc_data.charge_i);
+    //filter.filter_charge_i = Filter_average(adc_data.charge_i);
 	
 }
 
@@ -60,6 +60,7 @@ void ADC1_DMA_CpltCallback(DMA_HandleTypeDef *hdma)
     if (hdma->Instance == DMA1_Channel1) {
         // ADC1_Read();
         // WL_UART_printf("%.3f\n", filter.filter_charge_i);
+        filter.filter_charge_i = Filter_average((float)adc_data.adc_list_record[0]);
         osEventFlagsSet(xDataProcessEventHandle, ADC_DATA_READY_BIT);
     }
 }
@@ -68,12 +69,12 @@ static float Filter_average(float new_value)
 {
     static float sum = 0;
 
-    // ç§»é™¤æ—§å€¼ï¼ŒåŠ å…¥æ–°å€¼
+    // ÒÆ³ı¾ÉÖµ£¬¼ÓÈëĞÂÖµ
     sum -= filter.filter_buffer[filter.filter_index];
     sum += new_value;
     filter.filter_buffer[filter.filter_index] = new_value;
 
-    // æ›´æ–°ç´¢å¼•
+    // ¸üĞÂË÷Òı
     filter.filter_index = (filter.filter_index + 1) % FILTER_SIZE;
 
     return sum / FILTER_SIZE;

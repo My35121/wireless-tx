@@ -23,12 +23,16 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "drv_uart.h"
+#include "drv_adc.h"
 #include "dev_charge.h"
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN TD */
-
+int start_count= 0,is_start=0,off_count=0 ;
+extern filter_t filter;
+extern adc_data_t adc_data;
 /* USER CODE END TD */
 
 /* Private define ------------------------------------------------------------*/
@@ -53,7 +57,7 @@
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-int is_start = 0,start_count = 0;
+
 /* USER CODE END 0 */
 
 /* External variables --------------------------------------------------------*/
@@ -250,6 +254,7 @@ void TIM2_IRQHandler(void)
   /* USER CODE END TIM2_IRQn 0 */
   HAL_TIM_IRQHandler(&htim2);
   /* USER CODE BEGIN TIM2_IRQn 1 */
+
   /* USER CODE END TIM2_IRQn 1 */
 }
 
@@ -263,7 +268,7 @@ void TIM3_IRQHandler(void)
   /* USER CODE END TIM3_IRQn 0 */
   HAL_TIM_IRQHandler(&htim3);
   /* USER CODE BEGIN TIM3_IRQn 1 */
-	if(start_count >=1 && is_start ==1)
+    if(start_count >=2 && is_start ==1)
 	{
 		is_start = 0;
 		start_count = 0;
@@ -272,7 +277,16 @@ void TIM3_IRQHandler(void)
 	if(is_start == 1){
 		start_count ++;
 	}
-	
+	if(is_start == 0 && off_count >= 20)
+	{
+		is_start = 1;
+		Charge_Start();
+		off_count = 0;
+	}
+	if(is_start == 0)
+	{
+		off_count++;
+	}
   /* USER CODE END TIM3_IRQn 1 */
 }
 
@@ -286,12 +300,7 @@ void TIM4_IRQHandler(void)
   /* USER CODE END TIM4_IRQn 0 */
   HAL_TIM_IRQHandler(&htim4);
   /* USER CODE BEGIN TIM4_IRQn 1 */
-	if(is_start == 0){
-		is_start = 1;
-		Charge_Start();
-	}
-
-	
+    //WL_UART_printf("%.3f,%.3f\n",filter.filter_charge_i,(float)adc_data.adc_list_record[0]);
   /* USER CODE END TIM4_IRQn 1 */
 }
 
